@@ -7,9 +7,12 @@ public class Guess {
 
         int guessNumber = (int)(Math.random()* 101);
         int theNumber = 0;
-        System.out.println("Please, guess the number i'm thinking: ");
-        theNumber = scanner.nextInt();
-        System.out.println("Your number was: " + theNumber + ", and the right number is: " + guessNumber);
+
+
+        while(guessNumber != theNumber){
+            System.out.println("Please, guess the number i'm thinking: ");
+            theNumber = scanner.nextInt();
+        }
 
     }
 }
